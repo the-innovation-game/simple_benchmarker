@@ -56,13 +56,12 @@ class API:
         nonces: List[int]
       ):
           return self._call(
-            f"player/submitBenchmark", 
+            f"player/submitBenchmark/{challenge_id}", 
             json={
                 'player_id': player_id,
                 'block_id': block_id,
                 'prev_block_id': prev_block_id,
                 'algorithm_id': algorithm_id,
-                'challenge_id': challenge_id,
                 'difficulty': difficulty,
                 'nonces': nonces,
             }

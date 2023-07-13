@@ -8,9 +8,6 @@ logging.basicConfig(format="%(asctime)s - [%(levelname)s] - %(message)s")
 logger = logging.getLogger("the-innovation-game")
 logger.setLevel(logging.INFO)
 
-GIT_REPO = "https://github.com/the-innovation-game/challenges.git"
-GIT_BRANCH = "alpha"
-
 
 class IntermediateIntegersLogger:
     def __init__(self):
